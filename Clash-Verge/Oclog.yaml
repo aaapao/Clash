@@ -152,7 +152,7 @@ ipcidr: &a7 {type: http, behavior: ipcidr, interval: 28800}
 proxies: null
 proxy-groups:
 
-  - {name: ♻️ Auto, <<: *a4}
+  - {name: ♻️ Auto, type: select, proxies: [DIRECT]}
   - {name: CH, <<: *a4, filter: "中国"}
   - {name: HK, <<: *a4, filter: "香港|HK|(?i)Hong"}
   - {name: TW, <<: *a4, filter: "台湾"}
