@@ -2,7 +2,7 @@
 # @ConfigName        自用 Clash Verge 配置文件
 # @Author            @Semporia
 # @Feedback          请通过 Issues 反馈问题[其它方式一概无视] https://github.com/Semporia/Clash/issues💡
-# @UpdateTime        2026-01-30
+# @UpdateTime        2026-05-06
 # @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点、多机场订阅等等   
 # @ConfigVersion     2.0
 #==========================================
@@ -153,7 +153,9 @@ proxies: null
 proxy-groups:
 
   - {name: ♻️ Auto, <<: *a4}
+  - {name: CH, <<: *a4, filter: "中国"}
   - {name: HK, <<: *a4, filter: "香港|HK|(?i)Hong"}
+  - {name: TW, <<: *a4, filter: "台湾"}
   - {name: JP, <<: *a4, filter: "日本|东京|JP|(?i)Japan"}
   - {name: US, <<: *a4, filter: "美国|US|(?i)States|American"}
   - {name: SG, <<: *a4, filter: "新加坡|SG|(?i)Singapore"}
@@ -161,31 +163,28 @@ proxy-groups:
   - {name: Tencent, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Tencent.png }
   - {name: TencentVideo, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/TencentVideo.png }
   - {name: WeChat, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/WeChat.png }
-  - {name: Apple, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Apple.png }
-  - {name: Amazon, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Amazon.png }
-  - {name: DingTalk, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/DingTalk.png }
-  - {name: Facebook, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Facebook.png }
-  - {name: GitHub, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/GitHub.png }
-  - {name: Google, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Google.png }
-  - {name: Microsoft, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Microsoft.png }
-  - {name: Netflix, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Netflix.png }
+  - {name: Amazon, type: select, proxies: [DIRECTUS], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Amazon.png }
+  - {name: DingTalk, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/DingTalk.png }
+  - {name: Facebook, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Facebook.png }
+  - {name: GitHub, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/GitHub.png }
+  - {name: Google, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Google.png }
+  - {name: Microsoft, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Microsoft.png }
+  - {name: Netflix, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Netflix.png }
   - {name: NetEase, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/NetEase.png }
-  - {name: Spotify, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Spotify.png }
+  - {name: Spotify, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Spotify.png }
   - {name: Steam, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/TencentVideo.png }
-  - {name: Telegram, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Telegram.png }
-  - {name: Twitter, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Twitter.png }
-  - {name: YouTube, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/YouTube.png }
-  - {name: WhatsApp, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/WhatsApp.png }
-  - {name: PayPal, type: select, proxies: [US], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Paypal.png }
+  - {name: Telegram, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Telegram.png }
+  - {name: Twitter, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Twitter.png }
+  - {name: YouTube, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/YouTube.png }
+  - {name: WhatsApp, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/WhatsApp.png }
+  - {name: PayPal, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/Paypal.png }
   - {name: Zoom, type: select, proxies: [DIRECT], icon: https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Universal/Zoom.png }
-  - {name: Adobe, type: select, proxies: [REJECT] }
   - {name: China, type: select, proxies: [DIRECT]}
   - {name: ChinaIP, type: select, proxies: [DIRECT]}
   - {name: 🌏 Global, <<: *a3}
   - {name: MATCH, <<: *a3}
 
 rule-providers:
-  Apple: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Apple.yaml, path: ./ruleset/Apple.yaml}
   Tencent: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Tencent.yaml, path: ./ruleset/Tencent.yaml}
   TencentVideo: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/TencentVideo.yaml, path: ./ruleset/TencentVideo.yaml}
   WeChat: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/WeChat.yaml, path: ./ruleset/WeChat.yaml}
@@ -206,28 +205,13 @@ rule-providers:
   WhatsApp: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/WhatsApp.yaml, path: ./ruleset/WhatsApp.yaml}
   PayPal: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/PayPal.yaml, path: ./ruleset/PayPal.yaml}
   Zoom: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Zoom.yaml, path: ./ruleset/Zoom.yaml}
-  Adobe: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Adobe.yaml, path: ./ruleset/Adobe.yaml}
   ChinaIP: {<<: *a7, url: https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-rule-provider.yml, path: ./ruleset/ChinaIP.yaml}
   Proxy: {<<: *a6, url: https://cdn.jsdelivr.net/gh/Semporia/Clash@master/Rule/Proxy.yaml, path: ./ruleset/Proxy.yaml}
   
 rules:
-# Centro Nacional de Registros (CNR) 
-  - DOMAIN-SUFFIX,cnr.gob.sv,US
-# Maersk
-  - DOMAIN-SUFFIX,maersk.com,JP
-# Yang Ming
-  - DOMAIN-SUFFIX,yangming.com,HK
-# WAN HAI
-  - DOMAIN-SUFFIX,wanhai.com,DIRECT
-# shipmentlink
-  - DOMAIN-SUFFIX,shipmentlink.com,SG
-# SITC
-  - DOMAIN-SUFFIX,sitcline.com,DIRECT
-# Evergreen 
-  - DOMAIN-SUFFIX,evergreen-line.com,DIRECT
-# CMA CGM
-  - DOMAIN-SUFFIX,cma-cgm.com,JP
-  - DOMAIN-KEYWORD,cmacgm,JP
+# Synology
+  - DOMAIN-SUFFIX,cnnfreight.dscloud.me,CH
+  - DOMAIN-SUFFIX,cnnfreight.quickconnect.cn,CH
 # 云海系统
   - DOMAIN-SUFFIX,haven.scm.eportyun.com,DIRECT
   - DOMAIN-KEYWORD,haven.scm.eportyun.com,DIRECT
@@ -237,7 +221,6 @@ rules:
   - PROCESS-NAME,WeChatAppEx.exe,WeChat
   - PROCESS-NAME,Weixin.exe,WeChat
 # 分流
-  - RULE-SET,Apple,Apple
   - RULE-SET,Tencent,Tencent
   - RULE-SET,TencentVideo,DIRECT
   - RULE-SET,WeChat,WeChat
@@ -257,9 +240,8 @@ rules:
   - RULE-SET,WhatsApp,WhatsApp
   - RULE-SET,PayPal,PayPal
   - RULE-SET,Zoom,Zoom
-  - RULE-SET,Adobe,REJECT
-  - RULE-SET,China,DIRECT
-  - RULE-SET,ChinaIP,DIRECT
+  - RULE-SET,China,CH
+  - RULE-SET,ChinaIP,CH
   - RULE-SET,Proxy,🌏 Global
   
   # GEOSITE - 地理站点匹配
@@ -278,8 +260,8 @@ rules:
   - IP-CIDR,182.254.116.0/24,DIRECT
 
   # 国内网站直连
-  - GEOSITE,cn,DIRECT
-  - GEOIP,CN,DIRECT
-  - DOMAIN-SUFFIX,cn,DIRECT
+  - GEOSITE,cn,CH
+  - GEOIP,CN,CH
+  - DOMAIN-SUFFIX,cn,CH
   # MATCH - 兜底规则
   - MATCH,MATCH
