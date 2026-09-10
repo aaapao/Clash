@@ -4,13 +4,13 @@ payload:
   - DOMAIN-SUFFIX,maersk.com
   - DOMAIN-KEYWORD,maersk
 # Yang Ming
-  - DOMAIN-SUFFIX,yangming.com
+  # - DOMAIN-SUFFIX,yangming.com
 # WAN HAI
-  - DOMAIN-SUFFIX,wanhai.com
+  # - DOMAIN-SUFFIX,wanhai.com
 # shipmentlink
-  - DOMAIN-SUFFIX,shipmentlink.com
+  # - DOMAIN-SUFFIX,shipmentlink.com
 # SITC
-  - DOMAIN-SUFFIX,sitcline.com
+  # - DOMAIN-SUFFIX,sitcline.com
 # Evergreen 
   - DOMAIN-SUFFIX,evergreen-line.com
 # CMA CGM
