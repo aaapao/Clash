@@ -1,0 +1,32 @@
+payload: 
+
+# Maersk
+  - DOMAIN-SUFFIX,maersk.com
+  - DOMAIN-KEYWORD,maersk
+# Yang Ming
+  - DOMAIN-SUFFIX,yangming.com
+# WAN HAI
+  - DOMAIN-SUFFIX,wanhai.com
+# shipmentlink
+  - DOMAIN-SUFFIX,shipmentlink.com
+# SITC
+  - DOMAIN-SUFFIX,sitcline.com
+# Evergreen 
+  - DOMAIN-SUFFIX,evergreen-line.com
+# CMA CGM
+  - DOMAIN-SUFFIX,cma-cgm.com
+  - DOMAIN-KEYWORD,cmacgm
+# MSC
+  - DOMAIN-SUFFIX,msccargo.cn
+  - DOMAIN-SUFFIX,msc.com
+  - DOMAIN-SUFFIX,mscciam.b2clogin.com
+  - DOMAIN-KEYWORD,msccargo
+  - DOMAIN-KEYWORD,mscciam
+  - DOMAIN-KEYWORD,myMSC
+# OOCL
+  - DOMAIN-SUFFIX,oocl.com
+# PIL
+  - DOMAIN-SUFFIX,pilship.com
+  - DOMAIN-SUFFIX,pocketpil.com
+# RCL
+  - DOMAIN-SUFFIX,rclgroup.com
